@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+
+:root{
+    --orange:#FF9814;
+}
+
+*{
+    font-family: 'Open Sans', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline:none;
+    border:none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+*::selection{
+    background: var(--orange);
+    color:#fff;
+
+
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+header{
+    position: fixed;
+    top:0; left:0;
+    Z-index:1000;
+    background: #fff;
+    box-shadow: 0  .1rem  .3rem rgba(0,0,0,.3);
+    width: 100%;
+}
+
+header .heading{
+    font-size: 3rem;
+    color:#666;
+    padding: 1rem;
+    text-align: center;
+}
+header .navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    background:var(--orange);
+    padding:1rem; 
+}
+
+header .navbar ul li{
+    margin:0 1.5rem;
+}
+header .navbar ul li a{
+    font-size: 2rem;
+    color:#fff;
+}
+
+header .navbar ul li a:hover{
+    color:#444;
+}
+.personal{
+    margin-top: 7ex;
+   
+    font-size: large;
+    background-color: aquamarine;
+    table-layout: inherit;
+    
+}
+
+.personal input{
+    width: 500px;
+    padding: 10px 10px;
+    border: 3px solid blue;
+    border-radius: 4px;
+    font-size: 15px
+ 
+}
+.but{
+    background-color: #FF9814;
+    width: 80px;
+    margin-left: 250px;
+    text-align: center;
+    border: 3px solid blue;
+    border-radius: 4px;
+}
+
+
+
+.Carrear{
+    margin-top: 7ex;
+    font-size: large;
+    background-color: aquamarine;
+    word-spacing: 5px;
+    }
+.Carrear input{
+    width: 500px;
+    padding: 8px 8px;
+    border: 3px solid blue;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+.docoument{
+    margin-top: 15ex;
+    background-color: aquamarine;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries  */
+
+@media (max-width:768px){
+
+    html{
+        font-size: 55%;
+    }
+
+    .home .content{
+        text-align: center;
+    }
+
+    .home .content h1{
+        font-size: 4rem;
+    }
+
+    .about .content h1{
+        font-size: 4rem;
+    }
+
+}
+
+@media (max-width:500px){
+
+    html{
+        font-size: 50%;
+    }
+
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding:0 1rem;
+    }
+
+
+    header .navbar{
+        position: fixed;
+        top:6.2rem; right:-120%;
+        height:100%;
+        width:100%;
+        border-top: .2rem solid rgba(0,0,0,.3);
+    }
+
+    header .navbar ul{
+        height:100%;
+        width:100%;
+        flex-flow: column;
+        background:#fff;
+        padding-bottom: 15rem;
+    }
+
+    header .navbar ul li{
+        text-align: center;
+        width:100%;
+        margin:1rem 0;
+    }
+
+    header .navbar ul li a{
+        font-size: 4rem;
+        color:#333;
+        display: block;
+    }
+
+    header .navbar ul li a:hover{
+        color:var(--orange);
+    }
+
+}
+
+header .navbar.nav-toggle{
+    right:0;
+}
+
+section{
+    padding-top: 5rem;
+}
+
+.footer .box-container .box:last-child{
+    text-align: center;
+}
+
+.footer .box-container .box:last-child p{
+    font-size: 1.7rem;
+}
+
+.footer .box-container .box:last-child form{
+    flex-flow: column;
+}
+
+.footer .box-container .box:last-child form .btn{
+    margin-top: 1rem;
+    width:100%;
+}
+
